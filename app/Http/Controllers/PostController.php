@@ -17,7 +17,7 @@ class PostController extends Controller
             'description' => 'required'
         ]);
         if($validator->fails()){
-            return back()->with('status','Something went wrong!');
+            return back()->with('status','Something went  wrong!');
         }else{
             Post::create([
                 'user_id' => auth()->user()->id,
